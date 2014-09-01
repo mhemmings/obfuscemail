@@ -3,6 +3,9 @@ Obfuscemail
 
 [![Build Status](https://travis-ci.org/mhemmings/obfuscemail.svg?branch=master)]
 (https://travis-ci.org/mhemmings/obfuscemail)
+[![Build Status](https://david-dm.org/mhemmings/obfuscemail.png)]
+(https://david-dm.org/mhemmings/obfuscemail)
+
 
 Adding contact email to your site is a great idea to allow people to contact
 you easily. However, it's also a great way to put your email address on a dish
