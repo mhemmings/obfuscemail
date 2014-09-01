@@ -54,7 +54,7 @@ Obfuscemail can also be used as a Node.js module (see above for installation):
 2. Generate the javascript `<script>` tag with `obfuscemail -e test@example.com
 -t "Contact Me!"`. Cut and paste it into your HTML.
 3. When the browser loads the page, the span element will be replaced with
-`<a href=""mailto:test@example.com>Contact Me!</a>`
+`<a href="mailto:test@example.com">Contact Me!</a>`
 
 ## FAQs
 
