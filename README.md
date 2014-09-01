@@ -1,10 +1,8 @@
 Obfuscemail
 ===========
 
-[![Build Status](https://travis-ci.org/mhemmings/obfuscemail.svg?branch=master)]
-(https://travis-ci.org/mhemmings/obfuscemail)
-[![Build Status](https://david-dm.org/mhemmings/obfuscemail.png)]
-(https://david-dm.org/mhemmings/obfuscemail)
+[![Build Status](https://travis-ci.org/mhemmings/obfuscemail.svg?branch=master)](https://travis-ci.org/mhemmings/obfuscemail)
+[![Dependency Status](https://david-dm.org/mhemmings/obfuscemail.svg)](https://david-dm.org/mhemmings/obfuscemail)
 
 
 Adding contact email to your site is a great idea to allow people to contact
@@ -12,9 +10,9 @@ you easily. However, it's also a great way to put your email address on a dish
 for spammy web crawlers.
 
 Obfuscemail is a simple command line utility and Node.js module to help with
-this issue. It generates javascript which creates nice \<a\> mailto links which
-appear and work as normal in a web browser, but are not readable by web crawlers
-. The actual email address is hidden by the rot13 cipher.
+this issue. It generates javascript which creates nice `<a href="mailto:">`
+links which appear and work as normal in a web browser, but are not readable by
+web crawlers. The actual email address is hidden by the rot13 cipher.
 
 ## Installation
 
