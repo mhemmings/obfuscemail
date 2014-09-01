@@ -1,0 +1,39 @@
+{
+  "name": "obfuscemail",
+  "version": "0.1.0",
+  "description": "An email obfuscator utilising the rot13 cipher. Cuts down on spam in mailto links.",
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "obfuscemail": "./bin/obfuscemail.js"
+  },
+  "author": "Mark Hemmings",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mhemmings/obfuscemail.git"
+  },
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "uglify-js": "^2.4.15",
+    "validator": "^3.17.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jasmine-node": "^0.2.1",
+    "jshint-stylish": "^0.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mhemmings/obfuscemail/issues"
+  },
+  "homepage": "https://github.com/mhemmings/obfuscemail",
+  "keywords": [
+    "obfuscator",
+    "obfuscation",
+    "rot13",
+    "mailto",
+    "email"
+  ]
+}
