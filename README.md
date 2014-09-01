@@ -56,7 +56,7 @@ Obfuscemail can also be used as a Node.js module (see above for installation):
 ## FAQs
 
 1. **Why use the rot13 cipher?**  
-It adds the main layer of obfuscication. Bots with an email matching regex over
+It adds the main layer of obfuscation. Bots with an email matching regex over
 the whole page will be fooled by this.
 2. **But if enough people use rot13, bots will be be written to use it too.**  
 Yeah, they will. We'll cross that bridge when we get to it.
