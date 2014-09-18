@@ -3,13 +3,13 @@ var uglify = require('uglify-js');
 /**
  * Generates an immediately-invoked function expression to be placed inside
  * <script> tags.
- * @param  {String} mailto
+ * @param  {String} email
  * @param  {String} text
  * @return {String}
  */
-module.exports.generate = function (mailto, text) {
-  /* rot13 encode the mailto email address */
-  var email = rot13(mailto);
+module.exports.generate = function (email, text) {
+  /* rot13 encode the email address */
+  email = rot13(email);
 
   /* Start building the js string. */
   /* Assign the rot13 email to a var */
