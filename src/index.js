@@ -11,6 +11,9 @@ module.exports.generate = function (email, text) {
   /* rot13 encode the email address */
   email = rot13(email);
 
+  /* rot13 encode the text (it may contain email) */
+  text = rot13(text);
+
   /* Start building the js string. */
   /* Assign the rot13 email to a var */
   var js = 'var email = \'' + email + '\';';
@@ -19,7 +22,7 @@ module.exports.generate = function (email, text) {
   js += 'var text = \'' + text + '\';';
 
   /* Call the swapTags function */
-  js += 'swapTags(rot13(email), text);';
+  js += 'swapTags(rot13(email), rot13(text));';
 
   /* Include the swapTags function */
   js += swapTags.toString();

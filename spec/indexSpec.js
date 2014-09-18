@@ -32,13 +32,13 @@ describe('script builder', function() {
     var email = 'test@example.com';
     var text = 'contact me';
     var script = generator.generate(email, text);
-
-    var expected = '!function(){function e(e,n){for(var r=document.getElement' +
-      'sByClassName("obfuscemail"),t=0;t<r.length;t++){var a=r[t],c=document.' +
-      'createElement("a");c.href="mailto:"+e,c.innerHTML=n,a.parentNode.repla' +
-      'ceChild(c,a)}}function n(e){return e.replace(/[a-zA-Z]/g,function(e){r' +
+    console.log(script);
+    var expected = '!function(){function e(e,r){for(var n=document.getElement' +
+      'sByClassName("obfuscemail"),t=0;t<n.length;t++){var a=n[t],o=document.' +
+      'createElement("a");o.href="mailto:"+e,o.innerHTML=r,a.parentNode.repla' +
+      'ceChild(o,a)}}function r(e){return e.replace(/[a-zA-Z]/g,function(e){r' +
       'eturn String.fromCharCode(("Z">=e?90:122)>=(e=e.charCodeAt(0)+13)?e:e-' +
-      '26)})}var r="grfg@rknzcyr.pbz",t="contact me";e(n(r),t)}();';
+      '26)})}var n="grfg@rknzcyr.pbz",t="pbagnpg zr";e(r(n),r(t))}();';
 
     expect(script).toEqual(expected);
   });
