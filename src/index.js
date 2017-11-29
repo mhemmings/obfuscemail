@@ -58,14 +58,12 @@ function rot13(str) {
  * @param  {String} text
  */
 function swapTags(email, text) {
-  var elems = document.getElementsByClassName('obfuscemail');
-  for (var i = 0; i < elems.length; i++) {
-    var a = elems[i];
+  document.querySelectorAll('.obfuscemail').forEach(function(a) {
     var newA = document.createElement('a');
     newA.href = 'mailto:' + email;
     newA.innerHTML = text;
     a.parentNode.replaceChild(newA, a);
-  }
+  });
 }
 
 /* Expose functions to Node.js require(). Also helps with testing. */
